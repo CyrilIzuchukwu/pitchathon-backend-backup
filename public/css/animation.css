@@ -1,0 +1,158 @@
+#defaultModal {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background-color: rgba(17, 24, 39, 0.9);
+}
+
+#defaultModal>#inner {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    max-width: 42rem;
+}
+
+#defaultModal>#inner>#modalBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(to bottom right, #2D4D76, #dd2d38);
+    background: -webkit-linear-gradient(to bottom right, #2D4D76, #dd2d38);
+    border-radius: 0.5rem;
+    border: 2px solid #ccc;
+    animation: changeBorderColor 1s linear infinite;
+}
+
+@keyframes changeBorderColor {
+    0% {
+        border-color: #ccc;
+    }
+
+    50% {
+        border-color: goldenrod;
+    }
+}
+
+@-webkit-keyframes changeBorderColor {
+    0% {
+        border-color: #ccc;
+    }
+
+    50% {
+        border-color: goldenrod;
+    }
+}
+
+@-moz-keyframes changeBorderColor {
+    0% {
+        border-color: #ccc;
+    }
+
+    50% {
+        border-color: goldenrod;
+    }
+}
+
+@-o-keyframes changeBorderColor {
+    0% {
+        border-color: #ccc;
+    }
+
+    50% {
+        border-color: goldenrod;
+    }
+}
+
+#defaultModal>#inner>#modalBox>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#defaultModal>#inner>#modalBox>div>h1 {
+    animation: bounce 1s infinite;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+#defaultModal>#inner>#modalBox>div>#modalText {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(209, 213, 219, 1);
+    animation: changeColor 1s linear infinite;
+
+}
+
+@media screen and (max-width: 767px) {
+    #defaultModal>#inner>#modalBox>div>#modalText {
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: #ccc;
+    }
+
+    50% {
+        color: goldenrod;
+    }
+}
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: #ccc;
+    }
+
+    50% {
+        color: goldenrod;
+    }
+}
+
+@-moz-keyframes changeColor {
+    0% {
+        color: #ccc;
+    }
+
+    50% {
+        color: goldenrod;
+    }
+}
+
+@-o-keyframes changeColor {
+    0% {
+        color: #ccc;
+    }
+
+    50% {
+        color: goldenrod;
+    }
+}
